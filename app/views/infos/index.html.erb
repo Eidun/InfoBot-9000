@@ -7,6 +7,7 @@
     <tr>
       <th>Organización</th>
       <th>Nombre</th>
+      <th>Alias</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +17,7 @@
       <tr>
         <td><%= info.organizacion %></td>
         <td><%= info.nombre %></td>
+        <td><%= info.alias %></td>
         <td><%= link_to 'Ver', info %></td>
         <td><%= link_to 'Editar', edit_info_path(info) %></td>
         <td><%= link_to 'Borrar', info, method: :delete, data: { confirm: 'Borra únicamente fichas erróneas. ¿Estas seguro?' } %></td>
