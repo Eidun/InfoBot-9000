@@ -1,0 +1,57 @@
+<%= form_with(model: info, local: true) do |form| %>
+  <% if info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(info.errors.count, "error") %> prohibited this info from being saved:</h2>
+
+      <ul>
+      <% info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :organizacion %>
+    <%= form.text_field :organizacion, id: :info_organizacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detalles %>
+    <%= form.text_field :detalles, id: :info_detalles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color, id: :info_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre, id: :info_nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alias %>
+    <%= form.text_field :alias, id: :info_alias %>
+  </div>
+
+  <div class="field">
+    <%= form.label :posicion %>
+    <%= form.text_field :posicion, id: :info_posicion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion, id: :info_descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagen %>
+    <%= form.text_field :imagen, id: :info_imagen %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

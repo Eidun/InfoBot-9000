@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Organización:</strong>
+  <%= @info.organizacion %>
+</p>
+
+<p>
+  <strong>Detalles:</strong>
+  <%= @info.detalles %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @info.color %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @info.nombre %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @info.alias %>
+</p>
+
+<p>
+  <strong>Posición:</strong>
+  <%= @info.posicion %>
+</p>
+
+<p>
+  <strong>Descripción:</strong>
+  <%= @info.descripcion %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <img src="<%= @info.imagen %>" />
+</p>
+
+<%= link_to 'Editar', edit_info_path(@info) %> |
+<%= link_to 'Volver', infos_path %>

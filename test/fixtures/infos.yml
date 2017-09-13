@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  organizacion: MyString
+  detalles: MyString
+  color: MyString
+  nombre: MyString
+  alias: MyString
+  posicion: MyString
+  descripcion: MyString
+  imagen: MyString
+
+two:
+  organizacion: MyString
+  detalles: MyString
+  color: MyString
+  nombre: MyString
+  alias: MyString
+  posicion: MyString
+  descripcion: MyString
+  imagen: MyString
