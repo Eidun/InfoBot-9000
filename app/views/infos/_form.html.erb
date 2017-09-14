@@ -13,17 +13,17 @@
 
   <div class="field">
     <%= form.label :organizacion %>
-    <%= form.text_field :organizacion, id: :info_organizacion %>
+    <%= form.text_field :organizacion, id: :info_organizacion%>
   </div>
 
   <div class="field">
     <%= form.label :detalles %>
-    <%= form.text_field :detalles, id: :info_detalles %>
+    <%= form.text_field :detalles, id: :info_detalles, :placeholder => "Una frase sobre su labor" %>
   </div>
 
   <div class="field">
-    <%= form.label :color %>
-    <%= form.text_field :color, id: :info_color %>
+    <%= form.label :color%>
+    <%= form.text_field :color, id: :info_color, :placeholder => "Se puede dejar en blanco"   %>
   </div>
 
   <div class="field">
@@ -43,12 +43,12 @@
 
   <div class="field">
     <%= form.label :descripcion %>
-    <%= form.text_area :descripcion, id: :info_descripcion %>
+    <%= form.text_area :descripcion, id: :info_descripcion, :placeholder => "Descripción personal y detallada"  %>
   </div>
 
   <div class="field">
     <%= form.label :imagen %>
-    <%= form.text_field :imagen, id: :info_imagen %>
+    <%= form.text_field :imagen, id: :info_imagen, :placeholder => "URL directa de la imagen"  %>
   </div>
 
   <div class="actions">
