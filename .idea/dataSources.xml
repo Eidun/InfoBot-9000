@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails InfoBot-9000: test" uuid="767d27ff-4cdc-4f3a-881e-4a7a4974d1e1">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:InfoBot-9000_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails InfoBot-9000: production" uuid="10bcc3db-a7c1-4b5a-a3c8-d0c1661e9193">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:InfoBot-9000_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails InfoBot-9000: development" uuid="5c112de5-f218-4a2b-9310-f417f0e030c3">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:RolBot-9000</jdbc-url>
+    </data-source>
+  </component>
+</project>
