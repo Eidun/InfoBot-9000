@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails-assets-jquery', source: 'http://insecure.rails-assets.org/'
 gem 'rails-assets-jquery-ujs', source: 'http://insecure.rails-assets.org/'
+gem 'bootstrap', '~> 4.0.0.beta'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
