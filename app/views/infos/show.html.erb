@@ -32,8 +32,15 @@
   <dd>- <%= @info.descripcion %></dd>
   
   <dt><strong>Color:</strong></dt>
-  <dd><div class="cuadradin" style="background:<%= @info.color %>;"><%= @info.color %></div></dd>
+  <dd>- <div class="cuadradin" style="background:<%= @info.color %>;"><p><%= @info.color %></p></div></dd>
+		<!-- TODO:
+			Hacer que de alguna manera el color [<%= @info.color %>;] escrito con notación 0xHEX_RGB pase a estar escrito con #HEX_RBB
+			* replace 0x with #
+			* "#" + @info.color.substring(2,@info.color.count)
+			* O algo lo que sea
+  
+		-->
     
   <dt><strong>Imagen:</strong></dt>
-  <dd><img src="<%= @info.imagen %>" style="float: right;"/>
+  <dd><p><img src="<%= @info.imagen %>"/>
 </dl>
