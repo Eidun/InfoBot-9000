@@ -31,6 +31,9 @@
   <dt><strong>Descripción:</strong></dt>
   <dd>- <%= @info.descripcion %></dd>
   
+  <dt><strong>Imagen:</strong></dt>
+  <dd><p><img src="<%= @info.imagen %>"/></dd>
+  
   <dt><strong>Color:</strong></dt>
   <dd>- <span class="cuadradin" style="background:<%= @info.color %>;"><%= @info.color %></span> <br></dd>
 		<!-- TODO:
@@ -40,7 +43,4 @@
 			* O algo lo que sea
   
 		-->
-    
-  <dt><strong>Imagen:</strong></dt>
-  <dd><p><img src="<%= @info.imagen %>"/></dd>
 </dl>
