@@ -13,7 +13,7 @@
 <p><%= link_to 'Editar', edit_info_path(@info) %> | <%= link_to 'Volver', infos_path %>
 
 <hr>
-<h2>Detalles<h2>
+<h2>Detalles</h2>
 
 <dl>
   <dt><strong>Organización:</strong></dt>
@@ -32,7 +32,7 @@
   <dd>- <%= @info.descripcion %></dd>
   
   <dt><strong>Color:</strong></dt>
-  <dd><div class="cuadradin" style="color: <%= @info.color %>;"></div></dd>
+  <dd><div class="cuadradin" style="background:<%= @info.color %>;"></div></dd>
   
   <dt><strong>Imagen:</strong></dt>
   <dd><img src="<%= @info.imagen %>" />
