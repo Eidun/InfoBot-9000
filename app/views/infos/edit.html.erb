@@ -1,6 +1,10 @@
 <h1>Editar ficha</h1>
 
+<p><%= link_to 'Volver', infos_path %> | <%= link_to 'Ver', @info %>
+
+<hr>
+
 <%= render 'form', info: @info %>
 
-<%= link_to 'Ver', @info %> |
-<%= link_to 'Volver', infos_path %>
+
+

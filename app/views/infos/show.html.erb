@@ -1,44 +1,39 @@
-<p id="notice"><%= notice %></p>
+<style>
+.cuadradin{
+  float: left;
+  width: 120px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+</style>
 
-<p>
-  <strong>Organización:</strong>
-  <%= @info.organizacion %>
-</p>
+<h1><%= @info.nombre %></h1>
 
-<p>
-  <strong>Detalles:</strong>
-  <%= @info.detalles %>
-</p>
+<p><%= link_to 'Editar', edit_info_path(@info) %> | <%= link_to 'Volver', infos_path %>
 
-<p>
-  <strong>Color:</strong>
-  <%= @info.color %>
-</p>
+<hr>
+<h2>Detalles<h2>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @info.nombre %>
-</p>
-
-<p>
-  <strong>Alias:</strong>
-  <%= @info.alias %>
-</p>
-
-<p>
-  <strong>Posición:</strong>
-  <%= @info.posicion %>
-</p>
-
-<p>
-  <strong>Descripción:</strong>
-  <%= @info.descripcion %>
-</p>
-
-<p>
-  <strong>Imagen:</strong>
-  <img src="<%= @info.imagen %>" />
-</p>
-
-<%= link_to 'Editar', edit_info_path(@info) %> |
-<%= link_to 'Volver', infos_path %>
+<dl>
+  <dt><strong>Organización:</strong></dt>
+  <dd>- <%= @info.organizacion %></dd>
+  
+  <dt><strong>Nombre:</strong></dt>
+  <dd>- <%= @info.nombre %></dd>
+  
+  <dt><strong>Alias:</strong></dt>
+  <dd>- <%= @info.alias %></dd>
+  
+  <dt><strong>Posición:</strong></dt>
+  <dd>- <%= @info.posicion %></dd>
+  
+  <dt><strong>Descripción:</strong></dt>
+  <dd>- <%= @info.descripcion %></dd>
+  
+  <dt><strong>Color:</strong></dt>
+  <dd><div class="cuadradin" style="color: <%= @info.color %>;"></div></dd>
+  
+  <dt><strong>Imagen:</strong></dt>
+  <dd><img src="<%= @info.imagen %>" />
+</dl>
