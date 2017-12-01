@@ -12,35 +12,34 @@
 
 <p><%= link_to 'Editar', edit_info_path(@info) %> | <%= link_to 'Volver', infos_path %>
 
-<hr>
-<h2>Detalles</h2>
-
 <dl>
-  <dt><strong>Organización:</strong></dt>
+  <dt><strong>Detalles</strong></dt>
+  <dd>- <%= @info.detalles %></dd>
+
+  <dt><strong>Organización</strong></dt>
   <dd>- <%= @info.organizacion %></dd>
   
-  <dt><strong>Nombre:</strong></dt>
+  <dt><strong>Nombre</strong></dt>
   <dd>- <%= @info.nombre %></dd>
   
-  <dt><strong>Alias:</strong></dt>
+  <dt><strong>Alias</strong></dt>
   <dd>- <%= @info.alias %></dd>
   
-  <dt><strong>Posición:</strong></dt>
+  <dt><strong>Posición</strong></dt>
   <dd>- <%= @info.posicion %></dd>
   
-  <dt><strong>Descripción:</strong></dt>
+  <dt><strong>Descripción</strong></dt>
   <dd>- <%= @info.descripcion %></dd>
   
-  <dt><strong>Imagen:</strong></dt>
+  <dt><strong>Imagen</strong></dt>
   <dd><p><img src="<%= @info.imagen %>"/></dd>
   
-  <dt><strong>Color:</strong></dt>
+  <dt><strong>Color</strong></dt>
   <dd><span class="cuadradin" style="background:<%= @info.color %>;"><%= @info.color %></span> <br></dd>
-<script>function ColorFormatForCSS(color){ return '#' + color.substr(2)}
-
-$(function() { 
-var colorcss = ColorFormatForCSS($('.cuadradin').html())
-$('.cuadradin').css({'background-color': colorcss})
-$('.cuadradin').empty();
-})</script>
+  <script>function ColorFormatForCSS(color){ return '#' + color.substr(2)}
+  $(function() {
+    var colorcss = ColorFormatForCSS($('.cuadradin').html())
+    $('.cuadradin').css({'background-color': colorcss})
+    $('.cuadradin').empty();
+  })</script>
 </dl>
