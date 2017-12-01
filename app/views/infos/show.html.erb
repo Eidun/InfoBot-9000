@@ -36,11 +36,11 @@
   
   <dt><strong>Color:</strong></dt>
   <dd><span class="cuadradin" style="background:<%= @info.color %>;"><%= @info.color %></span> <br></dd>
-		<!-- TODO:
-			Hacer que de alguna manera el color [<%= @info.color %>;] escrito con notación 0xHEX_RGB pase a estar escrito con #HEX_RBB
-			* replace 0x with #
-			* "#" + @info.color.substring(2,@info.color.count)
-			* O algo lo que sea
-  
-		-->
+<script>function ColorFormatForCSS(color){ return '#' + color.substr(2)}
+
+$(function() { 
+var colorcss = ColorFormatForCSS($('.cuadradin').html())
+$('.cuadradin').css({'background-color': colorcss})
+$('.cuadradin').empty();
+})</script>
 </dl>
